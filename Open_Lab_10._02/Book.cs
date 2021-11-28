@@ -6,36 +6,46 @@ namespace Open_Lab_10._02
 {
     class Book
     {
-        public string title;
-        public int pages;
-        public string category;
-        public string author;
-        public int releaseDate;
+        private int pages;
+        private string category;
+        private string author;
+        private int releaseDate;
+        private string title;
+        public string atitle;
+        public int apages;
+        public string acategory;
+        public string aauthor;
+        public int areleaseDate;
 
 
-        public void apages()
-        { 
-            if (pages < 0)
-            {
-                pages = 1;
-            }
 
-        }
-        public void areleaseDate()
+
+        public void itle()
         {
-            if (releaseDate < 1405)
-            {
-                releaseDate = -1;
-            }
-            else
-            { 
-             if (releaseDate > 2021)
-                {
-                    releaseDate = -1;
-                }
-            }
+            title = atitle;
+            atitle = title;
         }
-       
+        public void ages()
+        {
+            pages = apages;
+            apages = pages;
+        }
+        public void ategory()
+        {
+            category = acategory;
+            acategory = category;
+        }
+        public void uthor()
+        {
+            author = aauthor;
+            aauthor = author;
+        }
+        public void eleaseDate()
+        {
+            releaseDate = areleaseDate;
+            areleaseDate = releaseDate;
+        }
+
         public void writeall() 
         {
 
