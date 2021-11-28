@@ -11,62 +11,48 @@ namespace Open_Lab_10._02
         private string category;
         private string author;
         private string releaseDate;
-        public string _title
+        public string atitle;
+        public int apages;
+        public string acategory;
+        public string aauthor;
+        public string areleaseDate;
+    
+
+
+
+        public void itle()
+        { 
+            title = atitle;
+            atitle = title;
+        }
+        public void ages() 
+        { 
+            pages = apages;
+            apages = pages;
+        }
+        public void ategory() 
+        { 
+            category = acategory;
+            acategory = category;
+        }
+        public void uthor() 
         {
-            get
-            {
-                return _title;
-            }
-            set
-            {
-                _title = title;
-            }
+            author = aauthor;
+            aauthor = author;
         }
-        public int _pages
-           {
-            get
-            {
-                return _pages;
-            }
-    set
-            {
-                _pages = pages;
-            }
+        public void eleaseDate() 
+        { 
+            releaseDate = areleaseDate;
+            areleaseDate = releaseDate;
         }
-        public string _category
-{
-    get
-            {
-        return _category;
-    }
-    set
-            {
-        _category = category;
-    }
-}
-public string _author
-{
-    get
-            {
-        return _author;
-    }
-    set
-            {
-        _author = author;
-    }
-}
-public string _releaseDate
-{
-    get
-            {
-        return _releaseDate;
-    }
-    set
-            {
-        _releaseDate = releaseDate;
-    }
-}
+        public void writeall() 
+        {
 
-
+            Console.WriteLine(atitle);
+            Console.WriteLine(apages);
+            Console.WriteLine(acategory);
+            Console.WriteLine(aauthor);
+            Console.WriteLine(areleaseDate);
+        }
     }
 }
